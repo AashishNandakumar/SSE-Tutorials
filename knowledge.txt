@@ -1,0 +1,24 @@
+Server-Sent Events (SSE) and WebSockets are both real-time communication protocols that use HTTP connections. The main difference between them is that SSE is one-way, while WebSockets is two-way. Here are some other differences:
+    Message structure
+    SSE is pure text, while WebSockets can handle both text and binary messages.
+
+Complexity
+WebSockets are more complex and require more developer input than SSE.
+
+Performance
+WebSockets generally perform better than SSE in terms of latency and throughput.
+
+Server resources
+SSE can be more efficient than WebSockets when it comes to server resources.
+
+Use cases
+WebSockets are better for interactive applications that require real-time communication in both directions, like chat apps and multiplayer collaboration. SSE is better for efficiently pushing updates from the server to clients, like in a stock ticker application.
+
+Protocol
+WebSocket uses the WebSocket protocol, while SSE uses standard HTTP/HTTPS.
+
+Data format limitations
+SSE is limited to transporting only UTF-8 data, so it doesn't support binary data.
+
+Number of open connections
+When not used over HTTP/2, SSE can have limitations with regard to the maximum number of open connections.
